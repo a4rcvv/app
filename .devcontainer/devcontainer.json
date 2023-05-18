@@ -1,0 +1,25 @@
+{
+  "name": "django",
+  "dockerComposeFile": [
+    "../docker/docker-compose.dev.yml"
+  ],
+  "service": "web",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.flake8",
+        "ms-python.black-formatter",
+        "ms-python.isort"
+      ],
+      "settings": {
+        "python.linting.pylintEnabled": false,
+        "python.linting.mypyEnabled": true,
+        "python.linting.flake8Enabled": true,
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}

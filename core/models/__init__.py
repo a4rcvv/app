@@ -1,0 +1,1 @@
+from core.models.abstract import TimeStampMixin, PrimaryKeyAsUUIDMixin
